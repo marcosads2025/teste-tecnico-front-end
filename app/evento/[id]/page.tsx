@@ -1,9 +1,9 @@
 "use client";
-import Link from "next/link";
-import {useEffect, useState} from "react";
-import {useParams, useRouter} from "next/navigation";
-import {Event} from "../../../types";
-import {getEventById} from "../../../services/api";
+
+import { useEffect, useState } from "react";
+import { useParams, useRouter } from "next/navigation";
+import { Event } from "../../../types";
+import { getEventById } from "../../../services/api";
 
 export default function EventDetails() {
     const params = useParams();
@@ -54,10 +54,12 @@ export default function EventDetails() {
     return (
         <main className="min-h-screen bg-gray-50 p-8 font-sans">
             <div className="max-w-4xl mx-auto">
-                <Link href={`/evento/${event.id}`}
-                      className="text-blue-600 font-medium text-sm hover:text-blue-800 hover:underline">
-                    Ver detalhes &rarr;
-                </Link>
+                <button
+                    onClick={() => router.push('/')}
+                    className="text-gray-500 hover:text-gray-800 mb-6 flex items-center gap-2 transition-colors"
+                >
+                    &larr; Voltar para listagem
+                </button>
 
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
                     <div className="flex justify-between items-start mb-6">
@@ -74,11 +76,9 @@ export default function EventDetails() {
 
                     <div className="p-4 bg-blue-50 text-blue-800 rounded-xl mb-8">
                         <p className="font-medium text-lg">Capacidade do Evento</p>
-                        <p className="text-3xl font-bold">{event.expectedParticipants} <span
-                            className="text-sm font-normal">pessoas esperadas</span></p>
+                        <p className="text-3xl font-bold">{event.expectedParticipants} <span className="text-sm font-normal">pessoas esperadas</span></p>
                     </div>
 
-                    {/* O Dashboard e Tabela de Check-ins entrarão aqui na próxima etapa */}
                     <div className="border-t border-gray-100 pt-8 mt-8">
                         <h2 className="text-xl font-semibold text-gray-800 mb-4">Área de Check-in</h2>
                         <p className="text-gray-500">O formulário de entrada será implementado aqui.</p>
