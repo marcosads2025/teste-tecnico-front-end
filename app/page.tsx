@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { Event } from "../types";
 import { getEvents } from "../services/api";
 
@@ -65,9 +66,9 @@ export default function Home() {
                     {event.status === 'open' ? 'Aberto' : 'Encerrado'}
                   </span>
 
-                                    <button className="text-blue-600 font-medium text-sm hover:text-blue-800 hover:underline">
+                                    <Link href={`/evento/${event.id}`} className="text-blue-600 font-medium text-sm hover:text-blue-800 hover:underline">
                                         Ver detalhes &rarr;
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         ))}
