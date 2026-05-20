@@ -1,5 +1,6 @@
 import { Event, Participant } from "../types";
 
+// CORREÇÃO AQUI: Apontando para a porta onde o json-server deve rodar
 const API_URL = "http://localhost:3001";
 
 export async function getEvents(): Promise<Event[]> {

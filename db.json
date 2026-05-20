@@ -8,8 +8,8 @@
       "status": "open",
       "description": "Evento focado em inovação e negócios.",
       "expected_count": 150,
-      "checkin_count": 4,
-      "error_count": 2,
+      "checkin_count": 6,
+      "error_count": 4,
       "entry_rate": 0
     },
     {
@@ -76,7 +76,7 @@
       "name": "Julia Souza (VIP)",
       "type": "vip",
       "status": "inside",
-      "checkin_count": 5
+      "checkin_count": 9
     }
   ],
   "checkins": [
@@ -1042,6 +1042,60 @@
       "action": "entry",
       "error_reason": null,
       "id": "tCQUf3FufdY"
+    },
+    {
+      "event_id": "1",
+      "participant_id": "4",
+      "timestamp": "2026-05-20T17:21:36.860Z",
+      "success": false,
+      "action": "entry",
+      "error_reason": "already_checked_in",
+      "id": "wYqEhgADOWQ"
+    },
+    {
+      "event_id": "1",
+      "participant_id": "4",
+      "timestamp": "2026-05-20T17:21:41.335Z",
+      "success": false,
+      "action": "entry",
+      "error_reason": "already_checked_in",
+      "id": "2y0Z3Q7xqQ4"
+    },
+    {
+      "event_id": "1",
+      "participant_id": "5",
+      "timestamp": "2026-05-20T17:21:46.227Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "V3HF3lBM7mg"
+    },
+    {
+      "event_id": "1",
+      "participant_id": "5",
+      "timestamp": "2026-05-20T17:21:50.932Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "GfwqWwECpRs"
+    },
+    {
+      "event_id": "1",
+      "participant_id": "5",
+      "timestamp": "2026-05-20T17:21:54.359Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "8hc4eyPn31k"
+    },
+    {
+      "event_id": "1",
+      "participant_id": "5",
+      "timestamp": "2026-05-20T17:21:56.675Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "hm8yadHDIcM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
