@@ -10,6 +10,8 @@
     "api": "json-server --watch db.json --port 3001"
   },
   "dependencies": {
+    "@jest/globals": "^30.4.1",
+    "@testing-library/react": "^16.3.2",
     "next": "16.2.6",
     "react": "19.2.4",
     "react-dom": "19.2.4",
