@@ -2,18 +2,1047 @@
   "events": [
     {
       "id": "1",
-      "name": "Conferência Tech 2026",
+      "name": "Semana do Empreendedorismo",
+      "date": "2026-04-09",
+      "location": "Centro de Convenções",
       "status": "open",
-      "date": "2026-05-20",
-      "expectedParticipants": 500
+      "description": "Evento focado em inovação e negócios.",
+      "expected_count": 150,
+      "checkin_count": 4,
+      "error_count": 2,
+      "entry_rate": 0
     },
     {
       "id": "2",
-      "name": "Encerramento Anual",
+      "name": "Palestra Liderança Ágil",
+      "date": "2026-01-14",
+      "location": "Auditório Principal",
       "status": "closed",
-      "date": "2026-05-18",
-      "expectedParticipants": 100
+      "description": "Como liderar equipes no modelo ágil.",
+      "expected_count": 80,
+      "checkin_count": 75,
+      "error_count": 2,
+      "entry_rate": 93
+    },
+    {
+      "id": "3",
+      "name": "Workshop de React Avançado",
+      "date": "2026-06-15",
+      "location": "Auditório B",
+      "status": "open",
+      "description": "Workshop intensivo de React e Next.js",
+      "expected_count": 50,
+      "checkin_count": 52,
+      "error_count": 1,
+      "entry_rate": 0
     }
   ],
-  "participants": []
+  "participants": [
+    {
+      "id": "1",
+      "event_id": 3,
+      "name": "Ana Oliveira (Normal)",
+      "type": "normal",
+      "status": "inside",
+      "checkin_count": 1
+    },
+    {
+      "id": "2",
+      "event_id": 3,
+      "name": "Carlos Mendes (VIP)",
+      "type": "vip",
+      "status": "inside",
+      "checkin_count": 99
+    },
+    {
+      "id": "3",
+      "event_id": 3,
+      "name": "Beatriz Costa (VIP)",
+      "type": "vip",
+      "status": "inside",
+      "checkin_count": 1
+    },
+    {
+      "id": "4",
+      "event_id": 1,
+      "name": "Marcos Silva (Normal)",
+      "type": "normal",
+      "status": "inside",
+      "checkin_count": 1
+    },
+    {
+      "id": "5",
+      "event_id": 1,
+      "name": "Julia Souza (VIP)",
+      "type": "vip",
+      "status": "inside",
+      "checkin_count": 5
+    }
+  ],
+  "checkins": [
+    {
+      "event_id": "1",
+      "participant_id": "4",
+      "timestamp": "2026-05-20T13:21:40.497Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "ovFxaqnYuro"
+    },
+    {
+      "event_id": "1",
+      "participant_id": "4",
+      "timestamp": "2026-05-20T13:21:49.822Z",
+      "success": false,
+      "action": "entry",
+      "error_reason": "already_checked_in",
+      "id": "hFq9wtRvYmA"
+    },
+    {
+      "event_id": "1",
+      "participant_id": "5",
+      "timestamp": "2026-05-20T13:21:55.320Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "xGbzdtEeKRo"
+    },
+    {
+      "event_id": "1",
+      "participant_id": "5",
+      "timestamp": "2026-05-20T13:21:57.109Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "FRkMZsC3VFg"
+    },
+    {
+      "event_id": "1",
+      "participant_id": "5",
+      "timestamp": "2026-05-20T13:21:58.069Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "VLI5RTGUxsI"
+    },
+    {
+      "event_id": "1",
+      "participant_id": "5",
+      "timestamp": "2026-05-20T13:27:46.780Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "ah65T8eZ2_4"
+    },
+    {
+      "event_id": "1",
+      "participant_id": "5",
+      "timestamp": "2026-05-20T13:27:49.861Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "ylLpciMU7hE"
+    },
+    {
+      "event_id": "1",
+      "participant_id": "4",
+      "timestamp": "2026-05-20T13:27:54.051Z",
+      "success": false,
+      "action": "entry",
+      "error_reason": "already_checked_in",
+      "id": "Wd-8hDa8ftk"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "1",
+      "timestamp": "2026-05-20T13:33:08.172Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "KpgVy26o5nc"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "1",
+      "timestamp": "2026-05-20T13:33:14.572Z",
+      "success": false,
+      "action": "entry",
+      "error_reason": "already_checked_in",
+      "id": "PVNX8iwoNtc"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:33:22.638Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "EhZkKPfMLS4"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:33:26.704Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "1KJS6STolRo"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:33:29.161Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "2EWDIsc68sE"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:33:45.744Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "KwkBOVuXTLs"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:33:46.919Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "tMQnfKWtlio"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:33:48.111Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "U__DqYxiI2c"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:33:49.469Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "iIXsOVO6rBM"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:33:54.153Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "W3-EwQXeBhQ"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:33:54.648Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "RfPzrWS2nA0"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:33:55.494Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "7Fb6CrBauv8"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:33:59.588Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "HFf7ehnzzfU"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:02.743Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "w6SSgwVwcIA"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:02.929Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "or8JYLLycrI"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:03.233Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "2UlFy9pxC-8"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:03.425Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "cwAeB7JxjdA"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:03.599Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "ZpfRnylU8aE"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:03.750Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "4OnM8SgtQrg"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:03.951Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "oElv1sH0nL0"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:04.136Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "AQ5k2332Y9k"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:04.524Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "Q4l57DAJfUc"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:04.705Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "0PDCSmS5yjQ"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:04.880Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "ejYBdqIgPLI"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:05.057Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "lI8QO4FQIOY"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:05.246Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "3uXbG__MScY"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:05.429Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "NbsjN2OvdMU"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:05.620Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "mJoxetSCGJs"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:05.786Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "8qJ9gjVli9E"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:05.996Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "wk70RHLdNFg"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:06.149Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "l5NpZJ39mLM"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:06.383Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "tL1v7hENoYs"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:06.512Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "wxdOIFKybLU"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:06.667Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "ZUVgvF22v3E"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:06.867Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "3pdZLIZ2_a4"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:07.212Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "wV9qchsj0ss"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:07.395Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "X-GAE8rQfu0"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:07.582Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "aJ-pH4qWFvs"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:07.762Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "ukmskMrnajI"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:07.940Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "t-wphHo9L0s"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:08.112Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "PxNuvFzWprE"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:08.312Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "oK4ecRjtkbE"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:08.497Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "GivfRMWJfKc"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:08.695Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "z8ahzGZYC7Q"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:08.911Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "bQXqQRfbACM"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:09.067Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "RTlE4Z0A7t4"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:09.263Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "BDXhHQd8K_U"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:09.434Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "ogV4yo_fubU"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:09.645Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "mwWOtMX7d58"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:09.822Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "kvLQp56o0nk"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:10.017Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "oW_SK4GJOd0"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:10.212Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "GAZrrGeTWVM"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:10.398Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "-4YHCug0agI"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:10.594Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "jFueLx9Ouzw"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:10.778Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "VHuOBSzixLA"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:10.950Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "-VsU-J5zKko"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:11.144Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "Ut6LX6-HnpE"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:11.328Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "nMfc5XPxGKM"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:11.511Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "nwzu_TW2ch4"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:11.697Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "Ri8bA5cH1ns"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:11.883Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "vFR37NXFIIg"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:12.070Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "dtv4okErywE"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:12.250Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "cB8d_WCfW2c"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:12.445Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "N-C_lsN8rGc"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:12.628Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "iVxiqU8q1Hg"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:12.802Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "MriEZaTUxes"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:12.994Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "DxUNuAUZtNE"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:13.178Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "5gjTM9MAI54"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:13.363Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "H36Q6vXAuTY"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:13.728Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "xMV2gfeB4uc"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:13.929Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "8g4FsZXYqO0"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:14.128Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "OIJISu2EbXQ"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:14.316Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "kqduZCDAZfA"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:14.528Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "pVOAnU9OUgc"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:14.729Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "IyMqUMuQc60"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:14.919Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "Q__Qekm8A9M"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:15.128Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "k-PSEolRmxU"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:15.328Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "dJ0PGRvi1SI"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:15.515Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "PeKMgijeX_U"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:15.700Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "_9ChIbZV5cU"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:15.913Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "Vm9mf2YkW2Q"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:16.111Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "2ZZ8CbU20c4"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:16.311Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "vTijXb3GirI"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:16.482Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "nV8kJH2Z9i0"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:16.669Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "MoBaHZCf-wE"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:16.864Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "B917YFUPafM"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:17.044Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "Pi0Sn4Vqngk"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:17.216Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "2QcoU4FYPO8"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:17.414Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "Xy0Yj9DTv28"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:17.612Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "SRZxBR7ypss"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:17.797Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "R2birZqLngk"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:17.982Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "a2AKsPLCSuE"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:18.177Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "_k_timZMWYQ"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:18.361Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "wch9fmMFJWY"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:18.820Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "2QijUMp7ISM"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:19.496Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "4T33c3DlPsk"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:23.007Z",
+      "success": true,
+      "action": "exit",
+      "error_reason": null,
+      "id": "hdEtKWQB2P0"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "2",
+      "timestamp": "2026-05-20T13:34:24.019Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "6BoN7fgbt3w"
+    },
+    {
+      "event_id": "3",
+      "participant_id": "3",
+      "timestamp": "2026-05-20T13:34:28.820Z",
+      "success": true,
+      "action": "entry",
+      "error_reason": null,
+      "id": "tCQUf3FufdY"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
