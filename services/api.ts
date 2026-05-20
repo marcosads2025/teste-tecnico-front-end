@@ -1,6 +1,6 @@
 import { Event, Participant } from "../types";
 
-const API_URL = "http://localhost:3001";
+const API_URL = "/api/data";
 
 export async function getEvents(): Promise<Event[]> {
     const response = await fetch(`${API_URL}/events`);
