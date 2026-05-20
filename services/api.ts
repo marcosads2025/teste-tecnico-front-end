@@ -20,22 +20,41 @@ export async function getParticipantsByEvent(eventId: string): Promise<Participa
     return res.json();
 }
 
-export async function updateParticipantStatus(id: string, newStatus: 'inside' | 'outside', currentCount: number): Promise<void> {
+export async function updateParticipantStatus(id: string, newStatus: 'inside' | 'outside', newCount: number): Promise<void> {
     const res = await fetch(`${API_URL}/participants/${id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
             status: newStatus,
-            checkin_count: currentCount + 1
+            checkin_count: newCount
         }),
     });
     if (!res.ok) throw new Error("Erro ao atualizar participante");
 }
 
 export async function updateEventMetrics(eventId: string, checkins: number, errors: number): Promise<void> {
-    await fetch(`${API_URL}/events/${eventId}`, {
+    const res = await fetch(`${API_URL}/events/${eventId}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ checkin_count: checkins, error_count: errors }),
     });
+    if (!res.ok) throw new Error("Erro ao atualizar métricas do evento");
+}
+
+export interface CheckinPayload {
+    event_id: string;
+    participant_id: string;
+    timestamp: string;
+    success: boolean;
+    action: 'entry' | 'exit';
+    error_reason: 'already_checked_in' | 'event_closed' | null;
+}
+
+export async function registerCheckinHistory(checkinData: CheckinPayload): Promise<void> {
+    const response = await fetch(`${API_URL}/checkins`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(checkinData),
+    });
+    if (!response.ok) throw new Error("Erro ao registrar histórico");
 }
